@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+/*FONT STYLE*/
+
+body {
+  font-family:      'Barlow Condensed', sans-serif;
+  font-size:        1.3rem;
+  text-align:       center;
+  background-color: #989898;
+  color:            black;
+  font-weight:      900;
+  letter-spacing:   0.2rem;
+}
+
+.header__headline, h1 {
+  font-family: 'Zen Tokyo Zoo', cursive;
+  color:        maroon;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1::first-letter {
+  font-size: 1.8rem;
+}
+
+.header__headline {
+  font-size: 2rem;
+}
+
+.footer li {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1224px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .header__headline {
+    font-size:      3rem;
+    text-transform: uppercase;
+  }
+
+  .header__headline::first-letter {
+      font-size: 5.6rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+  p, ul, #Cast ~ br {
+    font-size: 1.1rem;
+  }
+}
+
+
+.sidebar li {
+  font-style: oblique;
+}
+
+
+/*BACKGROUND*/
+
+.sidebar, .main__content__photos, .footer {
+  background-color: darkgrey;
+}
+
+
+/*MARGIN AND PADDING DECLARATION*/
+
+h1, li, img {
+  padding:    0.5rem;
+  margin-top: 0.5rem;
+}
+
+figure {
+  margin-bottom: 1rem;
+  padding:       1rem;
+}
+
+p {
+  padding-left:  1rem;
+  padding-right: 1rem;
+}
+
+/*LINK STYLE*/
+
+a {
+  color: maroon;
+}
+
+
+/*BORDERS*/
+
+@media screen and (min-width: 1224px) {
+  .sidebar {
+    border-left: 2px solid black; 
+  }
+  .main__content__photos {
+    border-right: 2px solid black; 
+  }
+  .footer {
+    border-top: 2px solid black;
+  }
+  .main__media {
+    border-bottom: 2px solid black;
+    border-top:    2px solid black;
+  }
+}

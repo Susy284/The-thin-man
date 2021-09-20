@@ -1,0 +1,113 @@
+/*HEADER STYLE*/
+
+.header {
+  background:      url('assets/Thin_man.jpg') no-repeat center;
+  background-size: cover;
+  height:          100vh;
+  width:           100%;
+  opacity:         75%;
+  text-shadow:     1px 1px black;
+}
+
+  .header__blockquote {
+    color:     maroon;
+    font-style: oblique;
+  }
+
+  .header__headline::after {
+    display: block;
+    content: "";
+    background-color: maroon;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1224px) {
+    .header__headline::after {
+      height: 3px;
+    }
+  }
+
+
+
+/*MAIN STYLE*/
+
+/*Video*/
+
+figure iframe {
+  width:  25rem;
+  height: auto;
+}
+
+  @media screen and (min-width: 1224px) {
+    figure iframe {
+      width: 50rem;
+    }
+  }
+
+figure {
+  border:  5px double maroon; 
+}
+
+/*Image*/
+
+img {
+  width:         auto;
+  height:        9rem;
+  border-radius: 50%;
+  box-shadow:    3px 6px 3px 0 black;
+  transition:    all .5s ease-out .1s;
+} 
+
+img:hover {
+  transform: scale(2,2);
+}
+
+@media screen and (min-width: 1224px) {
+  img {
+    height: 12rem;
+  }
+  #Nick:hover {
+    transform: translate(40rem, 5rem) scale(2,2);
+  }
+  #Nora:hover {
+    transform: translate(40rem, -3rem) scale(2,2);
+  }
+  #Asta:hover {
+    transform: translate(40rem, -5rem) scale(2,2);
+  }
+  #Murderer:hover {
+    transform: translate(40rem, -10rem) scale(2,2);
+  }
+  #Victim:hover {
+    transform: translate(40rem, -12rem) scale(2,2);
+  }
+}
+
+img + a {
+  font-variant-caps: all-petite-caps;
+}
+
+
+/*GLASS ANIMATION*/
+
+#Glass img {
+  width:         10rem;
+  height:        auto;
+  border-radius: 0%;
+  box-shadow:    none;
+}
+
+#Glass {
+  position:  fixed;
+  animation: bounce 8s linear infinite alternate;
+}
+  
+  @keyframes bounce {
+    0%    {left: 0%; bottom: 100%;}
+    25%   {left: 25%; bottom: 0%;}
+    50%   {left: 50%; bottom: 75%;}
+    70%   {left: 75%; bottom: 0%;}
+    100%  {left: 95%; bottom: 50% }
+}
