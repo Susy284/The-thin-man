@@ -100,17 +100,19 @@
 
   @media screen and (max-width: 1224px) {
     .kepek {
-      flex-direction: row;
-      flex-wrap:      wrap;
+      flex-direction:  row;
+      align-items:     center;
+      gap:             1rem;
+      justify-content: space-evenly;
+      flex-wrap:       wrap;
     }
   }
 
   @media screen and (max-width: 800px) {
     .kepek {
       flex-direction: column;
-    }
-    #Nick, #Nora, #Asta, #Murderer, #Victim {
-      flex-basis: auto;
+      align-items:    center;
+      gap:            0.5rem;
     }
   }
 
